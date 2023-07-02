@@ -13,7 +13,7 @@ const GameCard = ({ game }: Props) => {
     <Card width='250px' borderRadius={10} overflow='hidden'>
       <Image src={getCroppedImageUrl(game.background_image)} />
       <CardBody>
-        <Heading fontSize='2xl'>
+        <Heading fontSize='xl'>
           {game.name}
         </Heading>
        <PlatformIconList platforms={game.parent_platforms.map(p=>p.platform)}/>
